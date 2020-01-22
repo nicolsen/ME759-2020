@@ -2,11 +2,11 @@
 Starting with HW02, code files should be submitted via your ME759 git repository. Things that are not code or scripts should be submitted on Canvas.
 
 ### Create an Account
-Before we can make a repo for you, you will have to log in and create an account on the GitLab instance running on euler. You need to be on the engineering network in order to login.
+Before we can make a repo for you, you will have to log in and create an account on the GitLab instance running on euler. You need to be on the UW Madison network in order to login.
 
-If you are logging in from somewhere other than campus you should set up an [Engineering VPN](https://kb.wisc.edu/cae/84859). This requires a CAE account; use your CAE credentials to log in to the VPN. If you are unable to access the VPN with your CAE account, try [this](https://kb.wisc.edu/cae/page.php?id=23424). If you still cannot access the VPN, contact the [helpdesk](https://www.cae.wisc.edu/helpdesk/).
+If you are logging in from somewhere other than campus you should set up an [WiscVPN](https://kb.wisc.edu/helpdesk/page.php?id=68164). If you cannot access the VPN, contact the [helpdesk](https://it.wisc.edu/services/help-desk/).
 
-Once you are connected to the network, you can access the GitLab instance by opening [https://newton.msvc.wisc.edu:9443/](https://newton.msvc.wisc.edu:9443/) in a browser. Log in with your euler credentials and finish creating your profile.
+Once you are connected to the network, you can access the GitLab instance by opening [https://euler.wacc.wisc.edu](https://euler.wacc.wisc.edu) in a browser. Log in with your euler credentials and finish creating your profile.
 
 After the first assignment is due, we will create a repo for each student who has logged in.
 
