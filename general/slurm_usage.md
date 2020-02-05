@@ -13,7 +13,7 @@
 ```
 #!/usr/bin/env bash
 ```
-
+---
 ### Required Flags
 * Select partition (section of the cluster)
 ```
