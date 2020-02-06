@@ -1,0 +1,47 @@
+
+#################################
+## ME 759 Homework Test Builds ##
+#################################
+
+stages:
+  - build
+
+
+.base:
+  tags:
+    - linux
+  before_script:
+    - cat /etc/os-release
+    - uname -a
+    - echo "$GITLAB_USER_NAME (@$GITLAB_USER_LOGIN)"
+
+
+hw01:
+  stage: build
+  extends: .base
+  script:
+    - cd HW01
+    - g++ task6.cpp -Wall -O3 -o task6
+
+
+hw02:
+  stage: build
+  extends: .base
+  script:
+    - cd HW02
+    - g++ scan.cpp task1.cpp -Wall -O3 -o task1
+    - g++ convolution.cpp task2.cpp -Wall -O3 -o task2
+    - g++ task3.cpp matmul.cpp -Wall -O3 -o task3
+
+
+hw03:
+  stage: build
+  extends: .base
+  script:
+    - cd HW03
+    - nvcc task1.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -o task1
+    - nvcc task2.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -o task2
+    - nvcc task3.cu vadd.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -o task3
+
+
+
