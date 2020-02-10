@@ -21,6 +21,4 @@ The latest CI builds and their results are displayed at `https://euler.wacc.wisc
 - If you edit the file `.gitlab-ci.yml`, it is _your responsibility_. The provided version is made by your instructors for your benefit.
 - By default, GitLab builds _all_ of the homework directories in your repo. Your instructors will only build the current homework for grading.
 - Euler's GitLab instance sends emails for failed builds by default, but you shouldn't rely on this behavior. Be sure to visit your repository webpage to check for errors.
-
-
-
+- This is a good check of your code compilation and *should* be the same as compiling on Euler. That said, in case there are edge cases, you are still responsible for verifying that your code compiles on Euler with the given compile command.
