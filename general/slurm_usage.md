@@ -52,5 +52,15 @@
 #SBATCH -N n -c m
 ```
 ---
+### More Memory
+*Allocate at least `n` MB of RAM (or GB with suffix G)*
+```
+#SBATCH --mem=n
+```
+_or_
+```
+#SBATCH --mem=nG
+```
+
 ### Full Documentation
 You should stick to the above configurations for these types of jobs, but for more inforation on the other features of Slurm see [here](https://slurm.schedmd.com/sbatch.html).
