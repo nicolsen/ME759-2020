@@ -44,4 +44,10 @@ hw03:
     - nvcc task3.cu vadd.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -o task3
 
 
-
+hw04:
+  stage: build
+  extends: .base
+  script:
+    - cd HW04
+    - nvcc task1.cu matmul.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -o task1
+    - nvcc task2.cu stencil.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -o task2
