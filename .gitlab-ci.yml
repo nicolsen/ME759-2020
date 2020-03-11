@@ -68,3 +68,14 @@ hw06:
     - cd HW06
     - nvcc task1.cu mmul.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -lcublas -o task1
     - nvcc task2.cu scan.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -o task2
+
+hw07:
+  stage: build
+  extends: .base
+  script:
+    - cd HW07
+    - nvcc task1_thrust.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -o task1_thrust
+    - nvcc task1_cub.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -o task1_cub
+    - nvcc task2_thrust.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -o task2_thrust
+    - nvcc task2_cub.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -o task2_cub
+    - nvcc task3.cu count.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -o task3
