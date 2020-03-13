@@ -79,3 +79,12 @@ hw07:
     - nvcc task2_thrust.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -o task2_thrust
     - nvcc task2_cub.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -o task2_cub
     - nvcc task3.cu count.cu -Xcompiler -O3 -Xcompiler -Wall -Xptxas -O3 -o task3
+
+hw08:
+  stage: build
+  extends: .base
+  script:
+    - cd HW08
+    - g++ task1.cpp matmul.cpp -Wall -O3 -o task1 -fopenmp
+    - g++ task2.cpp convolution.cpp -Wall -O3 -o task2 -fopenmp
+    - g++ task3.cpp msort.cpp -Wall -O3 -o task3 -fopenmp
