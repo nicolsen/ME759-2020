@@ -4,10 +4,9 @@ Processing high-resolution images is a compute-heavy operation, often requiring 
 
 ## Topics
 ### Applying a Filter
-Filters (i.e., 2D convolutions) sweep across an image and act on each pixel combining their values with those of their neighbors in order to produce a desired effect. [This page](https://en.wikipedia.org/wiki/Kernel_(image_processing) has some common filters.
+Filters (i.e., 2D convolutions) sweep across an image and act on each pixel combining their values with those of their neighbors in order to produce a desired effect. [This page](https://en.wikipedia.org/wiki/Kernel_(image_processing)) has some common filters.
 
 ### Expressing Edges
-canny and sobel - conv plus
 Given an image which has already undergone an edge detection process to identify edge pixels (e. g., [Canny](https://en.wikipedia.org/wiki/Canny_edge_detector) and [Sobel](https://en.wikipedia.org/wiki/Sobel_operator)), it is often useful to have an algebraic expression of the lines which define edges. In order to get equations for these lines, one can apply a [Hough Transform](http://web.ipac.caltech.edu/staff/fmasci/home/astro_refs/HoughTrans_lines_09.pdf). Essentially, for each identified edge pixel, the transform takes account for each possible line that could go through that point. Once each pixel has been covered, lines that have occurred the most are identified. From there, these lines can be
 - reported and used in further image processing algorithms
 - drawn over the original image
